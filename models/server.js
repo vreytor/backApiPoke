@@ -30,7 +30,7 @@ class Server {
     middlewares() {
 
         // CORS
-        this.app.use( cors({ origin: true }) );        
+        this.app.use( cors({origin: '*'}) );        
 
         // Lectura y parseo del body
         this.app.use( express.json() );
