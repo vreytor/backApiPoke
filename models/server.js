@@ -11,6 +11,7 @@ class Server {
 
         this.usuariosPath = '/api/usuarios';
         this.authPath     = '/api/auth';
+        this.favoritosPath     = '/api/favoritos';
 
         // Conectar a base de datos
         this.conectarDB();
@@ -52,6 +53,7 @@ class Server {
         
         this.app.use( this.authPath, require('../routes/auth'));
         this.app.use( this.usuariosPath, require('../routes/usuarios'));
+        this.app.use( this.favoritosPath, require('../routes/pokemon'));
     }
 
     listen() {
