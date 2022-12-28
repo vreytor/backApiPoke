@@ -30,13 +30,7 @@ class Server {
     middlewares() {
 
         // CORS
-        this.app.use( cors() );
-
-        this.app.use(function(req, res, next) {
-            res.header("Access-Control-Allow-Origin", "http://backapipoke-production.up.railway.app/"); // update to match the domain you will make the request from
-            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-            next();
-        });
+        this.app.use( cors() );        
 
         // Lectura y parseo del body
         this.app.use( express.json() );
@@ -50,6 +44,11 @@ class Server {
         
         this.app.use( this.authPath, require('../routes/auth'));
         this.app.use( this.usuariosPath, require('../routes/usuarios'));
+        this.app.use(function(req, res, next) {
+            res.header("Access-Control-Allow-Origin", "http://backapipoke-production.up.railway.app/"); // update to match the domain you will make the request from
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            next();
+        });
     }
 
     listen() {
