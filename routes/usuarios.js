@@ -24,7 +24,7 @@ router.put('/:id',[
     check('id', 'No es un ID válido').isMongoId(),
     check('id').custom( existeUsuarioPorId ),
     validarCampos
-],usuariosPut );
+], usuariosPut );
 
 router.post('/',[
     check('nombre', 'El nombre es obligatorio').not().isEmpty(),
