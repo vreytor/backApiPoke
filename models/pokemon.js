@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const userSchema = mongoose.Schema({
+const FavoritoSchema = Schema({
     user_id: {
         type: String
     },
@@ -15,4 +15,4 @@ const userSchema = mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Pokemon', userSchema)
+module.exports = model( 'Pokemon' , FavoritoSchema );

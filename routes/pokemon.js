@@ -4,7 +4,7 @@ const userSchema = require("../models/pokemon");
 const router = express.Router();
 
 // create user
-router.post("/favoritos", (req, res) => {
+router.post("/", (req, res) => {
     const user = userSchema(req.body);
     user
         .save()
@@ -13,7 +13,7 @@ router.post("/favoritos", (req, res) => {
 });
 
 // get all users
-router.get("/favoritos", (req, res) => {
+router.get("/", (req, res) => {
     userSchema
       .find()
       .then((data) => res.json(data))
@@ -22,7 +22,7 @@ router.get("/favoritos", (req, res) => {
 
 
 // get a user
-router.get("/favoritos/:id", (req, res) => {
+router.get("/:id", (req, res) => {
     const { id } = req.params;
     userSchema
         .findById(id)
@@ -32,7 +32,7 @@ router.get("/favoritos/:id", (req, res) => {
 
 
 // update a user
-router.put("/favoritos/:id", (req, res) => {
+router.put("/:id", (req, res) => {
     const { id } = req.params;
     const { name, img, type } = req.body;
     userSchema
@@ -43,7 +43,7 @@ router.put("/favoritos/:id", (req, res) => {
 
 
 // delete a user
-router.delete("/favoritos/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
     const { id } = req.params;
     userSchema
         .deleteOne({ _id: id })
