@@ -1,5 +1,5 @@
-# POKEMON FAVORITOS
-
+![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/icono.jpg)
+#
 FUNCIONALIDAD DEL PROYECTO
 1.	Inicio: En este campo se visualiza iniciar de sesión (Login).
 
