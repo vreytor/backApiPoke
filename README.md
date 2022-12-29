@@ -1,4 +1,32 @@
-# WebServer + RestServer
+# PROYECTO FINAL
 
-Recuerden que deben de ejecutar ```npm install``` para reconstruir los módulos de Node.
-# backApiPoke
+Proyecto final
+Seccciones: Login, Sign Up, Profile, Pokemon List y Pokemon Favorites.
+
+# 🔘 Lenguajes:
+
+  ▪️ Html 5
+  
+  ▪️ Css
+  
+  ▪️ JavaScript
+
+# 🔘 Back-End:
+
+  ▪️ MongoDB
+  
+  ▪️ Express
+
+# 🔘 Integrantes:
+
+  ▪️ 
+  
+  ▪️ 
+  
+  ▪️ 
+  
+  ▪️
+  
+  ▪️ 
+  
+  ▪️ 
