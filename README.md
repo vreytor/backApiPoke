@@ -19,14 +19,14 @@ Seccciones: Login, Sign Up, Profile, Pokemon List y Pokemon Favorites.
 
 # 🔘 Integrantes:
 
-  ▪️ 
+  ▪️ Victor Reyes
   
-  ▪️ 
+  ▪️ Shirley Azurin
   
-  ▪️ 
+  ▪️ Marizol Colorina
   
-  ▪️
+  ▪️ Jennifer Nuñez
   
-  ▪️ 
+  ▪️ Paola Zuñiga
   
-  ▪️ 
+  ▪️ Yonathan
