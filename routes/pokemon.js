@@ -12,6 +12,13 @@ router.post("/favoritos", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
 
+router.get("/favoritos", (req, res) => {
+    userSchema
+      .find()
+      .then((data) => res.json(data))
+      .catch((error) => res.json({ message: error }));
+});
+
 // get all pokemons by user
 router.get("/favoritos/:user_id", (req, res) => {
     const { user_id } = req.params;
