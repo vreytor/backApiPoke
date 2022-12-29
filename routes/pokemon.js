@@ -4,7 +4,7 @@ const userSchema = require("../models/pokemon");
 const router = express.Router();
 
 // create user
-router.post("/favoritos", (req, res) => {
+router.post("/", (req, res) => {
     const user = userSchema(req.body);
     user
         .save()
@@ -12,37 +12,27 @@ router.post("/favoritos", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
 
-router.get("/favoritos", (req, res) => {
+// get all users
+router.get("/", (req, res) => {
     userSchema
       .find()
       .then((data) => res.json(data))
       .catch((error) => res.json({ message: error }));
 });
 
-// get all pokemons by user
-router.get("/favoritos/:user_id", (req, res) => {
-    const { user_id } = req.params;
-    userSchema
-      .find({user_id: user_id})
-      .then((data) => res.json(data))
-      .catch((error) => res.json({ message: error }));
-});
 
-
-// get a pokemon by user_id
-router.get("/favoritos/:user_id/:name", (req, res) => {
-    const { user_id } = req.params;
-    const { name } = req.params;
+// get a user
+router.get("/:id", (req, res) => {
+    const { id } = req.params;
     userSchema
-        .find({user_id: user_id})
-        .findOne({name: name})
+        .findById(id)
         .then((data) => res.json(data))
         .catch((error) => res.json({ message: error }));
 });
 
 
 // update a user
-router.put("/favoritos/:id", (req, res) => {
+router.put("/:id", (req, res) => {
     const { id } = req.params;
     const { name, img, type } = req.body;
     userSchema
@@ -53,7 +43,7 @@ router.put("/favoritos/:id", (req, res) => {
 
 
 // delete a user
-router.delete("/favoritos/:id", (req, res) => {
+router.delete("/:id", (req, res) => {
     const { id } = req.params;
     userSchema
         .deleteOne({ _id: id })
@@ -61,6 +51,7 @@ router.delete("/favoritos/:id", (req, res) => {
         .catch((error) => res.json({ message: error }));
 });
   
+
 
 
 module.exports = router;
