@@ -5,7 +5,8 @@ const FavoritoSchema = Schema({
         type: String
     },
     name: {
-        type: String
+        type: String,
+        unique: true
     },
     img: {
         type: String
