@@ -3,21 +3,21 @@
 **FUNCIONALIDAD DEL PROYECTO**
 1.	Inicio: En este campo se visualiza iniciar de sesión (Login).
 
-    •	Si el usuario existe, ingresar su correo y contraseña. Luego presionar el botón Iniciar Sesión.
+    ▪️	Si el usuario existe, ingresar su correo y contraseña. Luego presionar el botón Iniciar Sesión.
 
-    •	Si no existe el usuario, presionar el enlace (Regístrate).
+    ▪️	Si no existe el usuario, presionar el enlace (Regístrate).
 
 2.	Registro: En este campo llenar los siguientes campos.
 
-    •	Nombre
+    ▪️	Nombre
 
-    •	Apellido
+    ▪️	Apellido
 
-    •	Correo
+    ▪️	Correo
 
-    •	Contraseña 
+    ▪️	Contraseña 
 
-    •	Repita contraseña
+    ▪️	Repita contraseña
 
     Luego presionar el botón Regístrate, una vez registrado le saldrá una ventana de (Lista Pokemon).
 
@@ -28,17 +28,18 @@
 
 5.	Profile: En esta ventana se observa el formulario de usuario, con sus siguientes campos:
 
-    •	Nombre 
+    ▪️	Nombre 
 
-    •	Apellido
+    ▪️	Apellido
 
-    •	Correo
+    ▪️	Correo
 
-    •	Contraseña
+    ▪️	Contraseña
 
-    •	Repita Contraseña
+    ▪️	Repita Contraseña
 
     Para editar los datos del usuario, presionar el botón Modificar.
+    
     Para eliminar el usuario presionar el botón Eliminar
 
 
