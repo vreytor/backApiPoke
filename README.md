@@ -73,3 +73,11 @@
   
   #
 ![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/index.jpg)
+  #
+![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/registro.jpg)
+  #
+![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/home.jpg)
+  #
+![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/list.jpg)
+  #
+![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/favorite.jpg)
