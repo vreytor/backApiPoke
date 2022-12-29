@@ -1,6 +1,6 @@
 ![Image Text](https://github.com/vreytor/backApiPoke/blob/main/img/icono.jpg)
 #
-FUNCIONALIDAD DEL PROYECTO
+**FUNCIONALIDAD DEL PROYECTO**
 1.	Inicio: En este campo se visualiza iniciar de sesión (Login).
 
     •	Si el usuario existe, ingresar su correo y contraseña. Luego presionar el botón Iniciar Sesión.
